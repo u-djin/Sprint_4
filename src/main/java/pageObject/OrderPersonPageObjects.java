@@ -14,4 +14,6 @@ public class OrderPersonPageObjects {
     public static By errorInput = By.xpath(".//div[contains(@class,'Order_Form')]//div[contains(@class,'ErrorMessage') and contains(@class,'Input_Visible')]");   //индикатор неверно заполненного поля
 
     public static By nextButton = By.xpath(".//button[contains(@class,'Button_Button') and contains(@class,'Button_Middle')]");    //кнопка перехода на следующий этап заказа
+
+    public static By orderSection = By.xpath(".//div[contains(@class,'Order_Header')]");
 }

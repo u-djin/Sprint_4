@@ -26,9 +26,6 @@ public class OrderRentPageObjects {
     private static By greyColorButton = By.id("grey");
     public static By[] colorList = {blackColorButton, greyColorButton};
 
-    //закоменченное поле нужно для метода в OrderRentPage.java, подробности там
-    //public static By colorIsChosen = By.xpath(".//div[contains(@class,'Order_Checkboxes') and contains(@class,'Order_FilledContainer')]");
-
     //поле для комментария
     public static By commentInput = By.cssSelector("input[placeholder='Комментарий для курьера']");
 

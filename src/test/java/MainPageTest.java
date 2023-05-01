@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObject.MainPageObjects;
+import pageObject.OrderPersonPageObjects;
 
 import static org.junit.Assert.assertTrue;
 
@@ -34,7 +35,7 @@ public class MainPageTest {
     public void orderButtonTest() {
         for (int i = 0; i < 2; i++) {
             objMainPage.clickOrder(i);   //i = 0 - проверка верхней кнопки Заказать, i = 1 - проверка нижней кнопки Заказать
-            assertTrue(driver.findElement(By.xpath(".//div[contains(@class,'Order_Header')]")).getAttribute("class").contains("Order_Header"));
+            assertTrue(driver.findElement(OrderPersonPageObjects.orderSection).getAttribute("class").contains("Order_Header"));
             driver.findElement(MainPageObjects.samokatLogo).click();
         }
     }
